@@ -1,0 +1,273 @@
+@font-face {
+	font-family: lab grotesque;
+	src: url(fonts/lab-grotesque.otf);
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: lab grotesque light;
+	src: url(fonts/lab-grotesque-light.otf);
+	font-weight: normal;
+}
+
+body {
+	font-family: 'lab grotesque light', sans-serif;
+	background-color: #ebf0f1;
+	-webkit-font-smoothing: antialiased;
+	text-rendering: optimizelegibility;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+	background-color: #c1c1c1;
+	border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 3px;
+	background-color: #ebf0f1;
+}
+
+.popup-box {
+	background-color: #f6f6f6;
+	box-shadow: 0px 1px 10px 0px rgba(58, 60, 65, 0.3);
+	position: absolute;
+	top: 50%;
+	left: 0;
+	right: 0;
+	transform: translateY(-50%);
+	margin: 0 auto;
+	width: 321px;
+	height: 534px;
+}
+
+.popup-box .popup-head {
+	clear: both;
+	color: #7b7b7b;
+	font-family: 'lab grotesque light', sans-serif;
+	display: inline-table;
+	font-size: 21px;
+	min-height: 195px;
+	padding: 0px 25px;
+	width: 100%;
+	text-align: center;
+	background: radial-gradient(rgba(0, 0, 0, 0.15) 15%, transparent 16%) 0 0, radial-gradient(rgba(0, 0, 0, 0.15) 15%, transparent 16%) 8px 8px, radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 0 1px, radial-gradient(rgba(255, 255, 255, .1) 15%, transparent 20%) 8px 9px;
+	background-color: #bc008e;
+	background-size: 15px 15px;
+	color: #fff;
+	font-size: 15px;
+}
+
+.popup-box .popup-head .profile-photos {
+	margin: 27px 0 10px 0;
+}
+
+.popup-box .popup-head .profile-photos img {
+	border-radius: 50%;
+	width: 53px;
+	position: relative;
+	margin: 0px -10px;
+	pointer-events: none;
+}
+
+.popup-box .popup-head .profile-photos img:nth-child(1) {
+	padding: 5px;
+	background-color: #f6f6f6;
+	z-index: 3;
+	min-height: 100%;
+}
+
+.popup-box .popup-head .profile-photos img:nth-child(2) {
+	z-index: 2;
+}
+
+.popup-box .popup-head .profile-photos img:nth-child(3) {
+	z-index: 1;
+}
+
+.popup-box .popup-head p {
+	font-size: 13.7px;
+	line-height: 1.3;
+	opacity: 0.99;
+	letter-spacing: 0.2px;
+	margin-bottom: 9px;
+}
+
+.popup-box .popup-head a {
+	border-bottom: solid 1px rgba(255, 255, 255, 0.8);
+	text-decoration: none;
+	display: inline-block;
+	padding: 0 3px;
+	color: #fff;
+	opacity: 0.95;
+	font-size: 11.5px;
+	letter-spacing: 0.4px;
+	margin-bottom: 10px;
+}
+
+.popup-box .popup-head span {
+	color: #facaf7;
+	opacity: 0.99;
+	font-size: 10.5px;
+	display: block;
+	letter-spacing: 0.2px;
+}
+
+.popup-box .popup-messages {
+	background: #f6f6f6 none repeat scroll 0 0;
+	height: 292px;
+	/* overflow: auto; */
+}
+
+.direct-chat-messages {
+	overflow: auto;
+	padding: 22px 0;
+	font-size: 11.5px;
+}
+
+.user-message {
+	width: 90%;
+	float: right;
+	padding: 0 15px;
+}
+
+.admin-message {
+	width: 90%;
+	float: left;
+	padding: 0 15px;
+}
+
+.direct-chat-img {
+	padding: 0;
+	width: 32px;
+}
+
+.direct-chat-img img {
+	border-radius: 50%;
+	max-width: 100%;
+	padding: 5px;
+	background-color: #fff;
+	pointer-events: none;
+}
+
+.user-message .direct-chat-img {
+	float: right;
+	margin-left: 8px;
+}
+
+.admin-message .direct-chat-img {
+	float: left;
+	margin-right: 8px;
+}
+
+.direct-chat-text {
+	color: #3a3a3a;
+	font-size: 11.5px;
+	border-radius: 6px;
+	opacity: 0.99;
+}
+
+.direct-chat-text a {
+	color: #723b98;
+	text-decoration: none;
+	border-bottom: solid 1px rgba(114, 59, 152, 0.9);
+}
+
+.direct-chat-text p {
+	margin: 0;
+	line-height: 1.31;
+	letter-spacing: 0.1px;
+}
+
+.user-message .direct-chat-text {
+	padding: 10px 12px;
+	float: right;
+	background-color: #f4e5ff;
+}
+
+.admin-message .direct-chat-text {
+	padding: 7px 8px;
+	float: left;
+	background-color: #fff;
+}
+
+.user-message .direct-chat-timestamp {
+	float: right;
+	font-size: 10px;
+	color: #bbbbbb;
+	padding: 5px 0 9px 0;
+}
+
+.admin-message .direct-chat-timestamp {
+	float: left;
+	font-size: 10px;
+	color: #bbbbbb;
+	padding: 5px 0 9px 0;
+}
+
+.popup-messages-footer {
+	background: #fff none repeat scroll 0 0;
+	bottom: 0;
+	position: absolute;
+	width: 100%;
+}
+
+.popup-messages-footer form {
+	line-height: 0;
+}
+
+.popup-messages-footer .form-group {
+	width: 80%;
+	float: left;
+	margin: 0;
+}
+
+.popup-messages-footer .form-group textarea {
+	height: 50px;
+	padding: 17px 0 0 17px;
+	border: medium none;
+	width: 100%;
+	resize: none;
+	line-height: 1.3;
+	color: #676566;
+}
+
+.popup-messages-footer .form-group textarea::placeholder {
+	color: #676566;
+	font-weight: 500;
+	font-family: 'lab grotesque', sans-serif;
+	opacity: 0.98;
+}
+
+.popup-messages-footer .form-group textarea:focus,
+.popup-messages-footer .form-group textarea:hover {
+	border: none;
+	outline: none;
+}
+
+.popup-messages-footer .btn-footer {
+	overflow: hidden;
+	width: 20%;
+	display: inline-block;
+	float: left;
+}
+
+.bg_none {
+	background: rgba(0, 0, 0, 0) none repeat scroll 0 0;
+	border: medium none;
+	padding: 3px 0px;
+	margin: 9px 2px 0 2px;
+}
+
+.bg_none img {
+	width: 20.5px;
+    min-height: 100%;
+}
+
+.bg_none.send img {
+	width: 27px;
+}
+
+
+
+
